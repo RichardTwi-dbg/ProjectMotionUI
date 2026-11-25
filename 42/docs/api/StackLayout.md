@@ -16,7 +16,7 @@ Children are arranged sequentially along the specified direction.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `direction` | `string|nil` | Layout direction: "vertical" or "horizontal". Defaults to "vertical". |
+| `['direction', 'string|nil', 'Layout direction: "vertical" or "horizontal". Defaults to "vertical".']` | `['direction', 'string|nil', 'Layout direction: "vertical" or "horizontal". Defaults to "vertical".']` | ['direction', 'string|nil', 'Layout direction: "vertical" or "horizontal". Defaults to "vertical".'] |
 
 ### `PMUI.StackLayout:SetGap(gap)`
 
@@ -27,7 +27,7 @@ Triggers an immediate layout recalculation.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `gap` | `number` | Spacing between adjacent children in pixels. |
+| `['gap', 'number', 'Spacing between adjacent children in pixels.']` | `['gap', 'number', 'Spacing between adjacent children in pixels.']` | ['gap', 'number', 'Spacing between adjacent children in pixels.'] |
 
 ### `PMUI.StackLayout:SetPadding(top, right, bottom, left)`
 
@@ -39,10 +39,10 @@ Triggers an immediate layout recalculation.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `top` | `number` | Top padding, or uniform padding when used alone. |
-| `right` | `number|nil` | Right padding. If omitted, the top value is used for all sides. |
-| `bottom` | `number|nil` | Bottom padding. |
-| `left` | `number|nil` | Left padding. |
+| `['top', 'number', 'Top padding, or uniform padding when used alone.']` | `['top', 'number', 'Top padding, or uniform padding when used alone.']` | ['top', 'number', 'Top padding, or uniform padding when used alone.'] |
+| `['right', 'number|nil', 'Right padding. If omitted, the top value is used for all sides.']` | `['right', 'number|nil', 'Right padding. If omitted, the top value is used for all sides.']` | ['right', 'number|nil', 'Right padding. If omitted, the top value is used for all sides.'] |
+| `['bottom', 'number|nil', 'Bottom padding.']` | `['bottom', 'number|nil', 'Bottom padding.']` | ['bottom', 'number|nil', 'Bottom padding.'] |
+| `['left', 'number|nil', 'Left padding.']` | `['left', 'number|nil', 'Left padding.']` | ['left', 'number|nil', 'Left padding.'] |
 
 ### `PMUI.StackLayout:SetAutoSize(enabled)`
 
@@ -54,7 +54,7 @@ Triggers an immediate layout recalculation.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `enabled` | `boolean` | Whether automatic sizing should be enabled. |
+| `['enabled', 'boolean', 'Whether automatic sizing should be enabled.']` | `['enabled', 'boolean', 'Whether automatic sizing should be enabled.']` | ['enabled', 'boolean', 'Whether automatic sizing should be enabled.'] |
 
 ### `PMUI.StackLayout:RecalculateLayout()`
 

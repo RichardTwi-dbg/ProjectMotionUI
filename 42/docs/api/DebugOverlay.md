@@ -17,7 +17,7 @@ Sets the debug overlay state.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `state` | `boolean` | Whether debug rendering should be enabled. |
+| `['state', 'boolean', 'Whether debug rendering should be enabled.']` | `['state', 'boolean', 'Whether debug rendering should be enabled.']` | ['state', 'boolean', 'Whether debug rendering should be enabled.'] |
 
 ### `PMUI.Debug.DrawElementOverlay(el)`
 
@@ -27,5 +27,5 @@ Displays the element's bounds, padding, type, dimensions and hover state.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `el` | `ISUIElement` | The UI element to draw the overlay for. |
+| `['el', 'ISUIElement', 'The UI element to draw the overlay for.']` | `['el', 'ISUIElement', 'The UI element to draw the overlay for.']` | ['el', 'ISUIElement', 'The UI element to draw the overlay for.'] |
 

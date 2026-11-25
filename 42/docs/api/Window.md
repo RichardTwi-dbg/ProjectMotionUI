@@ -14,9 +14,9 @@ Creates a window with a draggable header, title, close button, and content area.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `title` | `string|nil` | Window title. Defaults to "Window". |
-| `width` | `number|nil` | Initial window width. Defaults to 360. |
-| `height` | `number|nil` | Initial window height. Defaults to 280. |
+| `['title', 'string|nil', 'Window title. Defaults to "Window".']` | `['title', 'string|nil', 'Window title. Defaults to "Window".']` | ['title', 'string|nil', 'Window title. Defaults to "Window".'] |
+| `['width', 'number|nil', 'Initial window width. Defaults to 360.']` | `['width', 'number|nil', 'Initial window width. Defaults to 360.']` | ['width', 'number|nil', 'Initial window width. Defaults to 360.'] |
+| `['height', 'number|nil', 'Initial window height. Defaults to 280.']` | `['height', 'number|nil', 'Initial window height. Defaults to 280.']` | ['height', 'number|nil', 'Initial window height. Defaults to 280.'] |
 
 ### `PMUI.Window:SetTexture(textureOrPath)`
 
@@ -26,7 +26,7 @@ When a texture is assigned, the header background and border are made transparen
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
+| `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | ['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.'] |
 
 ### `PMUI.Window:SetOpenSound(soundName)`
 
@@ -35,7 +35,7 @@ Sets the sound played when the window is opened.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `soundName` | `string|nil` | UI sound name. |
+| `['soundName', 'string|nil', 'UI sound name.']` | `['soundName', 'string|nil', 'UI sound name.']` | ['soundName', 'string|nil', 'UI sound name.'] |
 
 ### `PMUI.Window:SetCloseSound(soundName)`
 
@@ -44,7 +44,7 @@ Sets the sound played when the window is closed.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `soundName` | `string|nil` | UI sound name. |
+| `['soundName', 'string|nil', 'UI sound name.']` | `['soundName', 'string|nil', 'UI sound name.']` | ['soundName', 'string|nil', 'UI sound name.'] |
 
 ### `PMUI.Window:SetCornerRadius(radius)`
 
@@ -54,7 +54,7 @@ The header uses the top-corners-only mode to preserve the window shape.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `radius` | `number` | Corner radius in pixels. |
+| `['radius', 'number', 'Corner radius in pixels.']` | `['radius', 'number', 'Corner radius in pixels.']` | ['radius', 'number', 'Corner radius in pixels.'] |
 
 ### `PMUI.Window:SetHeaderColor(r, g, b, a)`
 
@@ -63,10 +63,10 @@ Sets the background color of the window header.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `r` | `number` | Red component (0.0-1.0). |
-| `g` | `number` | Green component (0.0-1.0). |
-| `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0). |
+| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
+| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
+| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
+| `['a', 'number|nil', 'Alpha component (0.0-1.0).']` | `['a', 'number|nil', 'Alpha component (0.0-1.0).']` | ['a', 'number|nil', 'Alpha component (0.0-1.0).'] |
 
 ### `PMUI.Window:OnClose(callback)`
 
@@ -76,7 +76,7 @@ The callback receives the window instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Close callback. |
+| `['callback', 'function|nil', 'Close callback.']` | `['callback', 'function|nil', 'Close callback.']` | ['callback', 'function|nil', 'Close callback.'] |
 
 ### `PMUI.Window:Close()`
 

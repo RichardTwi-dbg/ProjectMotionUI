@@ -19,7 +19,7 @@ Handles mouse wheel input and updates the vertical scroll position.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `del` | `number` | Mouse wheel delta. |
+| `['del', 'number', 'Mouse wheel delta.']` | `['del', 'number', 'Mouse wheel delta.']` | ['del', 'number', 'Mouse wheel delta.'] |
 
 ### `PMUI.ScrollFrame:ClampScroll()`
 

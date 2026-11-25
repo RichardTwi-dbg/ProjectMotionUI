@@ -14,9 +14,9 @@ Creates a new grid layout container with the specified column count and cell dim
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `columns` | `number|nil` | Number of columns in the grid. Defaults to 4. |
-| `cellW` | `number|nil` | Width of each grid cell. Defaults to 48. |
-| `cellH` | `number|nil` | Height of each grid cell. Defaults to 48. |
+| `['columns', 'number|nil', 'Number of columns in the grid. Defaults to 4.']` | `['columns', 'number|nil', 'Number of columns in the grid. Defaults to 4.']` | ['columns', 'number|nil', 'Number of columns in the grid. Defaults to 4.'] |
+| `['cellW', 'number|nil', 'Width of each grid cell. Defaults to 48.']` | `['cellW', 'number|nil', 'Width of each grid cell. Defaults to 48.']` | ['cellW', 'number|nil', 'Width of each grid cell. Defaults to 48.'] |
+| `['cellH', 'number|nil', 'Height of each grid cell. Defaults to 48.']` | `['cellH', 'number|nil', 'Height of each grid cell. Defaults to 48.']` | ['cellH', 'number|nil', 'Height of each grid cell. Defaults to 48.'] |
 
 ### `PMUI.GridLayout:SetColumns(cols)`
 
@@ -26,7 +26,7 @@ Triggers a layout recalculation after updating the value.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `cols` | `number` | Number of grid columns. Minimum value is 1. |
+| `['cols', 'number', 'Number of grid columns. Minimum value is 1.']` | `['cols', 'number', 'Number of grid columns. Minimum value is 1.']` | ['cols', 'number', 'Number of grid columns. Minimum value is 1.'] |
 
 ### `PMUI.GridLayout:SetCellSize(w, h)`
 
@@ -36,8 +36,8 @@ All child elements are resized to match the specified cell dimensions.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `w` | `number|nil` | Cell width. |
-| `h` | `number|nil` | Cell height. |
+| `['w', 'number|nil', 'Cell width.']` | `['w', 'number|nil', 'Cell width.']` | ['w', 'number|nil', 'Cell width.'] |
+| `['h', 'number|nil', 'Cell height.']` | `['h', 'number|nil', 'Cell height.']` | ['h', 'number|nil', 'Cell height.'] |
 
 ### `PMUI.GridLayout:SetGap(gapX, gapY)`
 
@@ -47,8 +47,8 @@ If the vertical gap is omitted, the horizontal gap is used for both axes.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `gapX` | `number|nil` | Horizontal spacing between cells. |
-| `gapY` | `number|nil` | Vertical spacing between cells. |
+| `['gapX', 'number|nil', 'Horizontal spacing between cells.']` | `['gapX', 'number|nil', 'Horizontal spacing between cells.']` | ['gapX', 'number|nil', 'Horizontal spacing between cells.'] |
+| `['gapY', 'number|nil', 'Vertical spacing between cells.']` | `['gapY', 'number|nil', 'Vertical spacing between cells.']` | ['gapY', 'number|nil', 'Vertical spacing between cells.'] |
 
 ### `PMUI.GridLayout:SetPadding(pad)`
 
@@ -57,7 +57,7 @@ Sets the inner spacing between the grid content and its container boundaries.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `pad` | `number|nil` | Padding applied to all sides of the grid. |
+| `['pad', 'number|nil', 'Padding applied to all sides of the grid.']` | `['pad', 'number|nil', 'Padding applied to all sides of the grid.']` | ['pad', 'number|nil', 'Padding applied to all sides of the grid.'] |
 
 ### `PMUI.GridLayout:SetAutoSize(enabled)`
 
@@ -68,7 +68,7 @@ column count, cell dimensions, gaps, and padding.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `enabled` | `boolean` | Whether automatic resizing should be enabled. |
+| `['enabled', 'boolean', 'Whether automatic resizing should be enabled.']` | `['enabled', 'boolean', 'Whether automatic resizing should be enabled.']` | ['enabled', 'boolean', 'Whether automatic resizing should be enabled.'] |
 
 ### `PMUI.GridLayout:RecalculateLayout()`
 

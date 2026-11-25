@@ -14,9 +14,9 @@ Creates a slider with the specified value range and step.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `minVal` | `number|nil` | Minimum slider value. Defaults to 0. |
-| `maxVal` | `number|nil` | Maximum slider value. Defaults to 100. |
-| `step` | `number|nil` | Value increment. Defaults to 1. |
+| `['minVal', 'number|nil', 'Minimum slider value. Defaults to 0.']` | `['minVal', 'number|nil', 'Minimum slider value. Defaults to 0.']` | ['minVal', 'number|nil', 'Minimum slider value. Defaults to 0.'] |
+| `['maxVal', 'number|nil', 'Maximum slider value. Defaults to 100.']` | `['maxVal', 'number|nil', 'Maximum slider value. Defaults to 100.']` | ['maxVal', 'number|nil', 'Maximum slider value. Defaults to 100.'] |
+| `['step', 'number|nil', 'Value increment. Defaults to 1.']` | `['step', 'number|nil', 'Value increment. Defaults to 1.']` | ['step', 'number|nil', 'Value increment. Defaults to 1.'] |
 
 ### `PMUI.Slider:SetValue(val, triggerCallback)`
 
@@ -26,8 +26,8 @@ The value is rounded to the nearest step when step is greater than zero.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `val` | `number` | Target slider value. |
-| `triggerCallback` | `boolean|nil` | Whether to invoke the change callback if the value changes. |
+| `['val', 'number', 'Target slider value.']` | `['val', 'number', 'Target slider value.']` | ['val', 'number', 'Target slider value.'] |
+| `['triggerCallback', 'boolean|nil', 'Whether to invoke the change callback if the value changes.']` | `['triggerCallback', 'boolean|nil', 'Whether to invoke the change callback if the value changes.']` | ['triggerCallback', 'boolean|nil', 'Whether to invoke the change callback if the value changes.'] |
 
 ### `PMUI.Slider:GetValue()`
 
@@ -42,7 +42,7 @@ The callback receives the new value and the slider instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Change callback. |
+| `['callback', 'function|nil', 'Change callback.']` | `['callback', 'function|nil', 'Change callback.']` | ['callback', 'function|nil', 'Change callback.'] |
 
 ### `PMUI.Slider:UpdateFromMouse()`
 
@@ -56,8 +56,8 @@ Starts dragging the slider thumb and immediately updates the value.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `x` | `number` | Mouse X coordinate relative to the element. |
-| `y` | `number` | Mouse Y coordinate relative to the element. |
+| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
+| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
 
 ### `PMUI.Slider:onMouseMove(dx, dy)`
 
@@ -66,8 +66,8 @@ Updates the slider value while the mouse is being dragged.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `dx` | `number` | Horizontal mouse movement delta. |
-| `dy` | `number` | Vertical mouse movement delta. |
+| `['dx', 'number', 'Horizontal mouse movement delta.']` | `['dx', 'number', 'Horizontal mouse movement delta.']` | ['dx', 'number', 'Horizontal mouse movement delta.'] |
+| `['dy', 'number', 'Vertical mouse movement delta.']` | `['dy', 'number', 'Vertical mouse movement delta.']` | ['dy', 'number', 'Vertical mouse movement delta.'] |
 
 ### `PMUI.Slider:onMouseMoveOutside(dx, dy)`
 
@@ -75,8 +75,8 @@ Continues updating the slider while the mouse is dragged outside its bounds.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `dx` | `number` | Horizontal mouse movement delta. |
-| `dy` | `number` | Vertical mouse movement delta. |
+| `['dx', 'number', 'Horizontal mouse movement delta.']` | `['dx', 'number', 'Horizontal mouse movement delta.']` | ['dx', 'number', 'Horizontal mouse movement delta.'] |
+| `['dy', 'number', 'Vertical mouse movement delta.']` | `['dy', 'number', 'Vertical mouse movement delta.']` | ['dy', 'number', 'Vertical mouse movement delta.'] |
 
 ### `PMUI.Slider:onMouseUp(x, y)`
 
@@ -85,8 +85,8 @@ Stops dragging the slider and plays the UI confirmation sound.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `x` | `number` | Mouse X coordinate relative to the element. |
-| `y` | `number` | Mouse Y coordinate relative to the element. |
+| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
+| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
 
 ### `PMUI.Slider:onMouseUpOutside(x, y)`
 
@@ -94,8 +94,8 @@ Stops dragging when the mouse button is released outside the slider.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `x` | `number` | Mouse X coordinate relative to the element. |
-| `y` | `number` | Mouse Y coordinate relative to the element. |
+| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
+| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
 
 ### `PMUI.Slider:prerender()`
 
@@ -107,7 +107,7 @@ Saves the current slider value into the provided state table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `data` | `table` | State table to populate. |
+| `['data', 'table', 'State table to populate.']` | `['data', 'table', 'State table to populate.']` | ['data', 'table', 'State table to populate.'] |
 
 ### `PMUI.Slider:LoadState(data)`
 
@@ -116,5 +116,5 @@ The change callback is triggered when the restored value differs from the curren
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `data` | `table` | State table containing the saved value. |
+| `['data', 'table', 'State table containing the saved value.']` | `['data', 'table', 'State table containing the saved value.']` | ['data', 'table', 'State table containing the saved value.'] |
 

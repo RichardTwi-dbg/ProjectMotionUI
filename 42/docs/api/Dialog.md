@@ -14,8 +14,8 @@ Creates a new modal dialog with a title, message, and centered content panel.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `title` | `string|nil` | Dialog title displayed in the header. |
-| `message` | `string|nil` | Message displayed inside the dialog. |
+| `['title', 'string|nil', 'Dialog title displayed in the header.']` | `['title', 'string|nil', 'Dialog title displayed in the header.']` | ['title', 'string|nil', 'Dialog title displayed in the header.'] |
+| `['message', 'string|nil', 'Message displayed inside the dialog.']` | `['message', 'string|nil', 'Message displayed inside the dialog.']` | ['message', 'string|nil', 'Message displayed inside the dialog.'] |
 
 ### `PMUI.Dialog:AddButton(text, callback)`
 
@@ -25,6 +25,6 @@ Buttons are automatically distributed horizontally across the bottom of the pane
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `text` | `string` | Button label. |
-| `callback` | `function|nil` | Function invoked when the button is clicked. |
+| `['text', 'string', 'Button label.']` | `['text', 'string', 'Button label.']` | ['text', 'string', 'Button label.'] |
+| `['callback', 'function|nil', 'Function invoked when the button is clicked.']` | `['callback', 'function|nil', 'Function invoked when the button is clicked.']` | ['callback', 'function|nil', 'Function invoked when the button is clicked.'] |
 

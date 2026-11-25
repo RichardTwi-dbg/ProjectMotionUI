@@ -18,5 +18,5 @@ to remain within the screen boundaries.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `el` | `ISUIElement` | UI element whose tooltip should be updated. |
+| `['el', 'ISUIElement', 'UI element whose tooltip should be updated.']` | `['el', 'ISUIElement', 'UI element whose tooltip should be updated.']` | ['el', 'ISUIElement', 'UI element whose tooltip should be updated.'] |
 

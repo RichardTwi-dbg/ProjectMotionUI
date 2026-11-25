@@ -14,7 +14,7 @@ Creates a text input field with an optional placeholder.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `placeholder` | `string|nil` | Text displayed when the input is empty and unfocused. |
+| `['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.']` | `['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.']` | ['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.'] |
 
 ### `PMUI.TextInput:instantiate()`
 
@@ -42,7 +42,7 @@ Sets the text displayed in the input field.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `text` | `string|nil` | Text to assign. Nil is treated as an empty string. |
+| `['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.']` | `['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.']` | ['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.'] |
 
 ### `PMUI.TextInput:OnChange(callback)`
 
@@ -52,7 +52,7 @@ The callback receives the current text and the TextInput instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Text change callback. |
+| `['callback', 'function|nil', 'Text change callback.']` | `['callback', 'function|nil', 'Text change callback.']` | ['callback', 'function|nil', 'Text change callback.'] |
 
 ### `PMUI.TextInput:render()`
 
@@ -65,7 +65,7 @@ Saves the current input text into the provided state table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `data` | `table` | State table to populate. |
+| `['data', 'table', 'State table to populate.']` | `['data', 'table', 'State table to populate.']` | ['data', 'table', 'State table to populate.'] |
 
 ### `PMUI.TextInput:LoadState(data)`
 
@@ -73,5 +73,5 @@ Restores the input text from a previously saved state.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `data` | `table` | State table containing the saved text. |
+| `['data', 'table', 'State table containing the saved text.']` | `['data', 'table', 'State table containing the saved text.']` | ['data', 'table', 'State table containing the saved text.'] |
 

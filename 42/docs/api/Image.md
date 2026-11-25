@@ -14,7 +14,7 @@ Creates a new image element using the specified texture.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
+| `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | ['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.'] |
 
 ### `PMUI.Image:SetTexture(textureOrPath)`
 
@@ -25,7 +25,7 @@ Automatically adopts the texture dimensions when the element still uses its defa
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
+| `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | ['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.'] |
 
 ### `PMUI.Image:SetTint(r, g, b, a)`
 
@@ -34,10 +34,10 @@ Sets the color tint applied to the image texture.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `r` | `number` | Red component (0.0-1.0). |
-| `g` | `number` | Green component (0.0-1.0). |
-| `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
+| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
+| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
+| `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | ['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.'] |
 
 ### `PMUI.Image:prerender()`
 

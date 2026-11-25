@@ -14,7 +14,7 @@ Creates a shape from a preset or a custom collection of rectangular parts.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `presetOrParts` | `string|table|nil` | Preset name or an array of normalized shape parts. |
+| `['presetOrParts', 'string|table|nil', 'Preset name or an array of normalized shape parts.']` | `['presetOrParts', 'string|table|nil', 'Preset name or an array of normalized shape parts.']` | ['presetOrParts', 'string|table|nil', 'Preset name or an array of normalized shape parts.'] |
 
 ### `PMUI.Shape:SetPreset(presetName)`
 
@@ -24,7 +24,7 @@ Unknown preset names result in an empty shape.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `presetName` | `string` | Name of a preset from PMUI.ShapePresets. |
+| `['presetName', 'string', 'Name of a preset from PMUI.ShapePresets.']` | `['presetName', 'string', 'Name of a preset from PMUI.ShapePresets.']` | ['presetName', 'string', 'Name of a preset from PMUI.ShapePresets.'] |
 
 ### `PMUI.Shape:SetColor(r, g, b, a)`
 
@@ -33,10 +33,10 @@ Sets the default fill color used by shape parts without an individual color.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `r` | `number` | Red component (0.0-1.0). |
-| `g` | `number` | Green component (0.0-1.0). |
-| `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
+| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
+| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
+| `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | ['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.'] |
 
 ### `PMUI.Shape:AddPart(nx, ny, nw, nh, customColor)`
 
@@ -46,11 +46,11 @@ Coordinates and dimensions are normalized relative to the element size.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `nx` | `number` | Horizontal position (0.0-1.0). |
-| `ny` | `number` | Vertical position (0.0-1.0). |
-| `nw` | `number` | Relative width (0.0-1.0). |
-| `nh` | `number` | Relative height (0.0-1.0). |
-| `customColor` | `table|nil` | Optional color override for this part. |
+| `['nx', 'number', 'Horizontal position (0.0-1.0).']` | `['nx', 'number', 'Horizontal position (0.0-1.0).']` | ['nx', 'number', 'Horizontal position (0.0-1.0).'] |
+| `['ny', 'number', 'Vertical position (0.0-1.0).']` | `['ny', 'number', 'Vertical position (0.0-1.0).']` | ['ny', 'number', 'Vertical position (0.0-1.0).'] |
+| `['nw', 'number', 'Relative width (0.0-1.0).']` | `['nw', 'number', 'Relative width (0.0-1.0).']` | ['nw', 'number', 'Relative width (0.0-1.0).'] |
+| `['nh', 'number', 'Relative height (0.0-1.0).']` | `['nh', 'number', 'Relative height (0.0-1.0).']` | ['nh', 'number', 'Relative height (0.0-1.0).'] |
+| `['customColor', 'table|nil', 'Optional color override for this part.']` | `['customColor', 'table|nil', 'Optional color override for this part.']` | ['customColor', 'table|nil', 'Optional color override for this part.'] |
 
 ### `PMUI.Shape:ClearParts()`
 
