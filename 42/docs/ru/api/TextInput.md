@@ -1,8 +1,11 @@
 # TextInput
+
 **Путь подключения:** `require "ProjectMotionUI/Components/TextInput"`
 
 ---
+
 ## Класс `PMUI.TextInput`
+
 *Наследуется от:* `PMUI.BaseElement`
 
 ## Методы и функции
@@ -14,7 +17,7 @@ Creates a text input field with an optional placeholder.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.']` | `['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.']` | ['placeholder', 'string|nil', 'Text displayed when the input is empty and unfocused.'] |
+| `placeholder` | `string|nil` | Text displayed when the input is empty and unfocused. |
 
 ### `PMUI.TextInput:instantiate()`
 
@@ -42,7 +45,7 @@ Sets the text displayed in the input field.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.']` | `['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.']` | ['text', 'string|nil', 'Text to assign. Nil is treated as an empty string.'] |
+| `text` | `string|nil` | Text to assign. Nil is treated as an empty string. |
 
 ### `PMUI.TextInput:OnChange(callback)`
 
@@ -52,7 +55,7 @@ The callback receives the current text and the TextInput instance.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['callback', 'function|nil', 'Text change callback.']` | `['callback', 'function|nil', 'Text change callback.']` | ['callback', 'function|nil', 'Text change callback.'] |
+| `callback` | `function|nil` | Text change callback. |
 
 ### `PMUI.TextInput:render()`
 
@@ -65,7 +68,7 @@ Saves the current input text into the provided state table.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['data', 'table', 'State table to populate.']` | `['data', 'table', 'State table to populate.']` | ['data', 'table', 'State table to populate.'] |
+| `data` | `table` | State table to populate. |
 
 ### `PMUI.TextInput:LoadState(data)`
 
@@ -73,5 +76,5 @@ Restores the input text from a previously saved state.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['data', 'table', 'State table containing the saved text.']` | `['data', 'table', 'State table containing the saved text.']` | ['data', 'table', 'State table containing the saved text.'] |
+| `data` | `table` | State table containing the saved text. |
 

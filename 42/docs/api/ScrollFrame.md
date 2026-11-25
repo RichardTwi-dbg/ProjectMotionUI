@@ -1,8 +1,11 @@
 # ScrollFrame
+
 **Require path:** `require "ProjectMotionUI/Components/ScrollFrame"`
 
 ---
+
 ## Class `PMUI.ScrollFrame`
+
 *Inherits from:* `PMUI.Frame`
 
 ## Methods & Functions
@@ -19,7 +22,7 @@ Handles mouse wheel input and updates the vertical scroll position.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['del', 'number', 'Mouse wheel delta.']` | `['del', 'number', 'Mouse wheel delta.']` | ['del', 'number', 'Mouse wheel delta.'] |
+| `del` | `number` | Mouse wheel delta. |
 
 ### `PMUI.ScrollFrame:ClampScroll()`
 

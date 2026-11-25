@@ -1,8 +1,11 @@
 # BaseElement
+
 **Require path:** `require "ProjectMotionUI/Core/BaseElement"`
 
 ---
+
 ## Class `PMUI.BaseElement`
+
 *Inherits from:* `ISUIElement`
 
 ## Methods & Functions
@@ -30,8 +33,8 @@ The state key is used to identify the element when saving and restoring its data
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['enabled', 'boolean', 'Whether state persistence is enabled.']` | `['enabled', 'boolean', 'Whether state persistence is enabled.']` | ['enabled', 'boolean', 'Whether state persistence is enabled.'] |
-| `['key', 'string|nil', 'Optional unique state key. Defaults to the element type.']` | `['key', 'string|nil', 'Optional unique state key. Defaults to the element type.']` | ['key', 'string|nil', 'Optional unique state key. Defaults to the element type.'] |
+| `enabled` | `boolean` | Whether state persistence is enabled. |
+| `key` | `string|nil` | Optional unique state key. Defaults to the element type. |
 
 ### `PMUI.BaseElement:SaveState(data)`
 
@@ -39,7 +42,7 @@ Saves the element's position, scale, and gravity state into the provided table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'State table to populate.']` | `['data', 'table', 'State table to populate.']` | ['data', 'table', 'State table to populate.'] |
+| `data` | `table` | State table to populate. |
 
 ### `PMUI.BaseElement:LoadState(data)`
 
@@ -48,7 +51,7 @@ Position offsets are reset if the restored coordinates place the element outside
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'Previously saved element state.']` | `['data', 'table', 'Previously saved element state.']` | ['data', 'table', 'Previously saved element state.'] |
+| `data` | `table` | Previously saved element state. |
 
 ### `PMUI.BaseElement:ApplyStyle(styleNameOrList, params)`
 
@@ -58,8 +61,8 @@ A table can be supplied to apply multiple styles in sequence.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['styleNameOrList', 'string|string[]', 'Style name or an ordered list of style names.']` | `['styleNameOrList', 'string|string[]', 'Style name or an ordered list of style names.']` | ['styleNameOrList', 'string|string[]', 'Style name or an ordered list of style names.'] |
-| `['params', 'table|nil', 'Optional parameters passed to each style function.']` | `['params', 'table|nil', 'Optional parameters passed to each style function.']` | ['params', 'table|nil', 'Optional parameters passed to each style function.'] |
+| `styleNameOrList` | `string|string[]` | Style name or an ordered list of style names. |
+| `params` | `table|nil` | Optional parameters passed to each style function. |
 
 ### `PMUI.BaseElement:instantiate()`
 
@@ -74,7 +77,7 @@ If the parent is already instantiated, the child is also initialized and attache
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['child', 'PMUI.BaseElement', 'Child element to add.']` | `['child', 'PMUI.BaseElement', 'Child element to add.']` | ['child', 'PMUI.BaseElement', 'Child element to add.'] |
+| `child` | `PMUI.BaseElement` | Child element to add. |
 
 ### `PMUI.BaseElement:SetHoverSound(soundName)`
 
@@ -83,7 +86,7 @@ Sets the sound played when the mouse enters the element.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['soundName', 'string|nil', 'UI sound name.']` | `['soundName', 'string|nil', 'UI sound name.']` | ['soundName', 'string|nil', 'UI sound name.'] |
+| `soundName` | `string|nil` | UI sound name. |
 
 ### `PMUI.BaseElement:SetClickSound(soundName)`
 
@@ -92,7 +95,7 @@ Sets the sound played when the element is clicked.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['soundName', 'string|nil', 'UI sound name.']` | `['soundName', 'string|nil', 'UI sound name.']` | ['soundName', 'string|nil', 'UI sound name.'] |
+| `soundName` | `string|nil` | UI sound name. |
 
 ### `PMUI.BaseElement:OnRender(fn)`
 
@@ -102,7 +105,7 @@ The callback receives the element instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['fn', 'function', 'Render callback.']` | `['fn', 'function', 'Render callback.']` | ['fn', 'function', 'Render callback.'] |
+| `fn` | `function` | Render callback. |
 
 ### `PMUI.BaseElement:OnPreRender(fn)`
 
@@ -112,7 +115,7 @@ The callback receives the element instance and frame delta time in seconds.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['fn', 'function', 'Pre-render callback.']` | `['fn', 'function', 'Pre-render callback.']` | ['fn', 'function', 'Pre-render callback.'] |
+| `fn` | `function` | Pre-render callback. |
 
 ### `PMUI.BaseElement:OnHover(fn)`
 
@@ -122,7 +125,7 @@ The callback receives the element instance and the new hover state.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['fn', 'function', 'Hover callback.']` | `['fn', 'function', 'Hover callback.']` | ['fn', 'function', 'Hover callback.'] |
+| `fn` | `function` | Hover callback. |
 
 ### `PMUI.BaseElement:SetDraggable(enabled, targetElement)`
 
@@ -132,8 +135,8 @@ An optional target element can be specified to move a parent or another element 
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['enabled', 'boolean', 'Whether dragging is enabled.']` | `['enabled', 'boolean', 'Whether dragging is enabled.']` | ['enabled', 'boolean', 'Whether dragging is enabled.'] |
-| `['targetElement', 'PMUI.BaseElement|nil', 'Element to move. Defaults to this element.']` | `['targetElement', 'PMUI.BaseElement|nil', 'Element to move. Defaults to this element.']` | ['targetElement', 'PMUI.BaseElement|nil', 'Element to move. Defaults to this element.'] |
+| `enabled` | `boolean` | Whether dragging is enabled. |
+| `targetElement` | `PMUI.BaseElement|nil` | Element to move. Defaults to this element. |
 
 ### `PMUI.BaseElement:SetGravity(enabled)`
 
@@ -143,7 +146,7 @@ Enabling gravity starts a fall animation; disabling it restores the element's po
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['enabled', 'boolean', 'Whether gravity is enabled.']` | `['enabled', 'boolean', 'Whether gravity is enabled.']` | ['enabled', 'boolean', 'Whether gravity is enabled.'] |
+| `enabled` | `boolean` | Whether gravity is enabled. |
 
 ### `PMUI.BaseElement:SetTooltip(titleOrText, text)`
 
@@ -153,8 +156,8 @@ When only one argument is provided, it is treated as the tooltip text without a 
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['titleOrText', 'string', 'Tooltip title or body text.']` | `['titleOrText', 'string', 'Tooltip title or body text.']` | ['titleOrText', 'string', 'Tooltip title or body text.'] |
-| `['text', 'string|nil', 'Optional tooltip body text.']` | `['text', 'string|nil', 'Optional tooltip body text.']` | ['text', 'string|nil', 'Optional tooltip body text.'] |
+| `titleOrText` | `string` | Tooltip title or body text. |
+| `text` | `string|nil` | Optional tooltip body text. |
 
 ### `PMUI.BaseElement:SetSize(offsetW, offsetH)`
 
@@ -164,8 +167,8 @@ The final dimensions also include any parent-relative scale values.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['offsetW', 'number|nil', 'Width offset in pixels.']` | `['offsetW', 'number|nil', 'Width offset in pixels.']` | ['offsetW', 'number|nil', 'Width offset in pixels.'] |
-| `['offsetH', 'number|nil', 'Height offset in pixels.']` | `['offsetH', 'number|nil', 'Height offset in pixels.']` | ['offsetH', 'number|nil', 'Height offset in pixels.'] |
+| `offsetW` | `number|nil` | Width offset in pixels. |
+| `offsetH` | `number|nil` | Height offset in pixels. |
 
 ### `PMUI.BaseElement:SetSizePercent(scaleW, scaleH)`
 
@@ -174,8 +177,8 @@ Sets the element's width and height as proportions of its parent.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['scaleW', 'number|nil', 'Width scale relative to the parent.']` | `['scaleW', 'number|nil', 'Width scale relative to the parent.']` | ['scaleW', 'number|nil', 'Width scale relative to the parent.'] |
-| `['scaleH', 'number|nil', 'Height scale relative to the parent.']` | `['scaleH', 'number|nil', 'Height scale relative to the parent.']` | ['scaleH', 'number|nil', 'Height scale relative to the parent.'] |
+| `scaleW` | `number|nil` | Width scale relative to the parent. |
+| `scaleH` | `number|nil` | Height scale relative to the parent. |
 
 ### `PMUI.BaseElement:SetPosition(offsetX, offsetY)`
 
@@ -184,8 +187,8 @@ Sets the element's position using pixel offsets relative to its parent.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['offsetX', 'number|nil', 'Horizontal position offset.']` | `['offsetX', 'number|nil', 'Horizontal position offset.']` | ['offsetX', 'number|nil', 'Horizontal position offset.'] |
-| `['offsetY', 'number|nil', 'Vertical position offset.']` | `['offsetY', 'number|nil', 'Vertical position offset.']` | ['offsetY', 'number|nil', 'Vertical position offset.'] |
+| `offsetX` | `number|nil` | Horizontal position offset. |
+| `offsetY` | `number|nil` | Vertical position offset. |
 
 ### `PMUI.BaseElement:SetPositionPercent(scaleX, scaleY)`
 
@@ -194,8 +197,8 @@ Sets the element's position using proportions of its parent dimensions.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['scaleX', 'number|nil', 'Horizontal position scale.']` | `['scaleX', 'number|nil', 'Horizontal position scale.']` | ['scaleX', 'number|nil', 'Horizontal position scale.'] |
-| `['scaleY', 'number|nil', 'Vertical position scale.']` | `['scaleY', 'number|nil', 'Vertical position scale.']` | ['scaleY', 'number|nil', 'Vertical position scale.'] |
+| `scaleX` | `number|nil` | Horizontal position scale. |
+| `scaleY` | `number|nil` | Vertical position scale. |
 
 ### `PMUI.BaseElement:SetAnchor(anchorX, anchorY)`
 
@@ -205,8 +208,8 @@ Anchor values are normalized: 0.0 represents the leading edge, 0.5 the center, a
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['anchorX', 'number|nil', 'Horizontal anchor value.']` | `['anchorX', 'number|nil', 'Horizontal anchor value.']` | ['anchorX', 'number|nil', 'Horizontal anchor value.'] |
-| `['anchorY', 'number|nil', 'Vertical anchor value.']` | `['anchorY', 'number|nil', 'Vertical anchor value.']` | ['anchorY', 'number|nil', 'Vertical anchor value.'] |
+| `anchorX` | `number|nil` | Horizontal anchor value. |
+| `anchorY` | `number|nil` | Vertical anchor value. |
 
 ### `PMUI.BaseElement:SetPassThroughClicks(pass)`
 
@@ -215,7 +218,7 @@ Controls whether mouse clicks pass through this element to elements behind it.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['pass', 'boolean', 'Whether mouse clicks should pass through.']` | `['pass', 'boolean', 'Whether mouse clicks should pass through.']` | ['pass', 'boolean', 'Whether mouse clicks should pass through.'] |
+| `pass` | `boolean` | Whether mouse clicks should pass through. |
 
 ### `PMUI.BaseElement:SetAlpha(alpha)`
 
@@ -224,7 +227,7 @@ Sets the element's opacity.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['alpha', 'number', 'Opacity value, typically between 0.0 and 1.0.']` | `['alpha', 'number', 'Opacity value, typically between 0.0 and 1.0.']` | ['alpha', 'number', 'Opacity value, typically between 0.0 and 1.0.'] |
+| `alpha` | `number` | Opacity value, typically between 0.0 and 1.0. |
 
 ### `PMUI.BaseElement:ApplyPositionOnly()`
 
@@ -253,8 +256,8 @@ Starts dragging when the element is draggable; otherwise respects click pass-thr
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.BaseElement:onMouseMove(dx, dy)`
 
@@ -264,8 +267,8 @@ Keeps a short history of mouse positions for calculating the release velocity.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['dx', 'number', 'Horizontal mouse movement delta.']` | `['dx', 'number', 'Horizontal mouse movement delta.']` | ['dx', 'number', 'Horizontal mouse movement delta.'] |
-| `['dy', 'number', 'Vertical mouse movement delta.']` | `['dy', 'number', 'Vertical mouse movement delta.']` | ['dy', 'number', 'Vertical mouse movement delta.'] |
+| `dx` | `number` | Horizontal mouse movement delta. |
+| `dy` | `number` | Vertical mouse movement delta. |
 
 ### `PMUI.BaseElement:onMouseMoveOutside(dx, dy)`
 
@@ -273,8 +276,8 @@ Continues drag handling when the mouse moves outside the element's bounds.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['dx', 'number', 'Horizontal mouse movement delta.']` | `['dx', 'number', 'Horizontal mouse movement delta.']` | ['dx', 'number', 'Horizontal mouse movement delta.'] |
-| `['dy', 'number', 'Vertical mouse movement delta.']` | `['dy', 'number', 'Vertical mouse movement delta.']` | ['dy', 'number', 'Vertical mouse movement delta.'] |
+| `dx` | `number` | Horizontal mouse movement delta. |
+| `dy` | `number` | Vertical mouse movement delta. |
 
 ### `PMUI.BaseElement:onMouseUp(x, y)`
 
@@ -284,8 +287,8 @@ Stops dragging and, if the element was falling before the drag, applies the rele
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.BaseElement:onMouseUpOutside(x, y)`
 
@@ -293,8 +296,8 @@ Handles mouse button release outside the element's bounds.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.BaseElement:onRightMouseDown(x, y)`
 
@@ -303,6 +306,6 @@ Handles right mouse button presses according to the click pass-through setting.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 

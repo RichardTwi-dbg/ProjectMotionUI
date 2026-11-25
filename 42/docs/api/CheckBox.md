@@ -1,8 +1,11 @@
 # CheckBox
+
 **Require path:** `require "ProjectMotionUI/Components/CheckBox"`
 
 ---
+
 ## Class `PMUI.Checkbox`
+
 *Inherits from:* `PMUI.BaseElement`
 
 ## Methods & Functions
@@ -14,8 +17,8 @@ Creates a new checkbox element with the specified label and initial state.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['labelText', 'string|nil', 'Text displayed next to the checkbox.']` | `['labelText', 'string|nil', 'Text displayed next to the checkbox.']` | ['labelText', 'string|nil', 'Text displayed next to the checkbox.'] |
-| `['initialState', 'boolean|nil', 'Whether the checkbox is initially checked.']` | `['initialState', 'boolean|nil', 'Whether the checkbox is initially checked.']` | ['initialState', 'boolean|nil', 'Whether the checkbox is initially checked.'] |
+| `labelText` | `string|nil` | Text displayed next to the checkbox. |
+| `initialState` | `boolean|nil` | Whether the checkbox is initially checked. |
 
 ### `PMUI.Checkbox:SetChecked(state, triggerCallback)`
 
@@ -24,8 +27,8 @@ Sets the checkbox state and optionally notifies the change callback.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['state', 'boolean', 'New checked state.']` | `['state', 'boolean', 'New checked state.']` | ['state', 'boolean', 'New checked state.'] |
-| `['triggerCallback', 'boolean|nil', 'Whether to invoke the registered callback.']` | `['triggerCallback', 'boolean|nil', 'Whether to invoke the registered callback.']` | ['triggerCallback', 'boolean|nil', 'Whether to invoke the registered callback.'] |
+| `state` | `boolean` | New checked state. |
+| `triggerCallback` | `boolean|nil` | Whether to invoke the registered callback. |
 
 ### `PMUI.Checkbox:IsChecked()`
 
@@ -40,7 +43,7 @@ The callback receives the new state and the checkbox instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['callback', 'function|nil', 'Function invoked after a state change.']` | `['callback', 'function|nil', 'Function invoked after a state change.']` | ['callback', 'function|nil', 'Function invoked after a state change.'] |
+| `callback` | `function|nil` | Function invoked after a state change. |
 
 ### `PMUI.Checkbox:onMouseUp(x, y)`
 
@@ -50,8 +53,8 @@ Triggers the change callback, plays the toggle sound, and applies a bounce anima
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.Checkbox:prerender()`
 
@@ -64,7 +67,7 @@ Saves the current checkbox state into the provided data table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'Table used to store the checkbox state.']` | `['data', 'table', 'Table used to store the checkbox state.']` | ['data', 'table', 'Table used to store the checkbox state.'] |
+| `data` | `table` | Table used to store the checkbox state. |
 
 ### `PMUI.Checkbox:LoadState(data)`
 
@@ -73,5 +76,5 @@ Invokes the change callback if a saved state is available.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'Table containing the previously saved checkbox state.']` | `['data', 'table', 'Table containing the previously saved checkbox state.']` | ['data', 'table', 'Table containing the previously saved checkbox state.'] |
+| `data` | `table` | Table containing the previously saved checkbox state. |
 

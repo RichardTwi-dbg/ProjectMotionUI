@@ -1,8 +1,11 @@
 # Frame
+
 **Require path:** `require "ProjectMotionUI/Components/Frame"`
 
 ---
+
 ## Class `PMUI.Frame`
+
 *Inherits from:* `PMUI.BaseElement`
 
 ## Methods & Functions
@@ -20,7 +23,7 @@ String values are resolved through getTexture(), while texture objects are assig
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | `['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.']` | ['textureOrPath', 'string|Texture|nil', 'Texture object or path to a texture.'] |
+| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
 
 ### `PMUI.Frame:SetBackgroundColor(r, g, b, a)`
 
@@ -29,10 +32,10 @@ Sets the frame background color and controls background visibility.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
-| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
-| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
-| `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | ['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.'] |
+| `r` | `number` | Red component (0.0-1.0). |
+| `g` | `number` | Green component (0.0-1.0). |
+| `b` | `number` | Blue component (0.0-1.0). |
+| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
 
 ### `PMUI.Frame:SetBorderColor(r, g, b, a)`
 
@@ -41,10 +44,10 @@ Sets the frame border color and controls border visibility.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
-| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
-| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
-| `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | ['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.'] |
+| `r` | `number` | Red component (0.0-1.0). |
+| `g` | `number` | Green component (0.0-1.0). |
+| `b` | `number` | Blue component (0.0-1.0). |
+| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
 
 ### `PMUI.Frame:SetCornerRadius(radius, topOnly)`
 
@@ -54,8 +57,8 @@ Optionally limits rounded corners to the top edge.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['radius', 'number', 'Corner radius in pixels.']` | `['radius', 'number', 'Corner radius in pixels.']` | ['radius', 'number', 'Corner radius in pixels.'] |
-| `['topOnly', 'boolean|nil', 'Whether only the top corners should be rounded.']` | `['topOnly', 'boolean|nil', 'Whether only the top corners should be rounded.']` | ['topOnly', 'boolean|nil', 'Whether only the top corners should be rounded.'] |
+| `radius` | `number` | Corner radius in pixels. |
+| `topOnly` | `boolean|nil` | Whether only the top corners should be rounded. |
 
 ### `PMUI.Frame:DrawRoundedBox(w, h, r, bgCol, borderCol, alphaMult)`
 
@@ -65,12 +68,12 @@ Falls back to standard rectangle rendering when the radius is too small.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['w', 'number', 'Frame width.']` | `['w', 'number', 'Frame width.']` | ['w', 'number', 'Frame width.'] |
-| `['h', 'number', 'Frame height.']` | `['h', 'number', 'Frame height.']` | ['h', 'number', 'Frame height.'] |
-| `['r', 'number', 'Requested corner radius.']` | `['r', 'number', 'Requested corner radius.']` | ['r', 'number', 'Requested corner radius.'] |
-| `['bgCol', 'table', 'Background color components.']` | `['bgCol', 'table', 'Background color components.']` | ['bgCol', 'table', 'Background color components.'] |
-| `['borderCol', 'table', 'Border color components.']` | `['borderCol', 'table', 'Border color components.']` | ['borderCol', 'table', 'Border color components.'] |
-| `['alphaMult', 'number', "Additional alpha multiplier, usually the frame's opacity."]` | `['alphaMult', 'number', "Additional alpha multiplier, usually the frame's opacity."]` | ['alphaMult', 'number', "Additional alpha multiplier, usually the frame's opacity."] |
+| `w` | `number` | Frame width. |
+| `h` | `number` | Frame height. |
+| `r` | `number` | Requested corner radius. |
+| `bgCol` | `table` | Background color components. |
+| `borderCol` | `table` | Border color components. |
+| `alphaMult` | `number` | Additional alpha multiplier, usually the frame's opacity. |
 
 ### `PMUI.Frame:prerender()`
 

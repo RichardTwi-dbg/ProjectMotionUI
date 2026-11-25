@@ -1,8 +1,11 @@
 # Tabs
+
 **Require path:** `require "ProjectMotionUI/Components/Tabs"`
 
 ---
+
 ## Class `PMUI.Tabs`
+
 *Inherits from:* `PMUI.BaseElement`
 
 ## Methods & Functions
@@ -20,7 +23,7 @@ The first tab added is automatically selected.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['title', 'string', 'Text displayed on the tab button.']` | `['title', 'string', 'Text displayed on the tab button.']` | ['title', 'string', 'Text displayed on the tab button.'] |
+| `title` | `string` | Text displayed on the tab button. |
 
 ### `PMUI.Tabs:UpdateTabButtonsLayout()`
 
@@ -34,8 +37,8 @@ The selected tab can optionally skip its fade-in animation.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['index', 'number', 'Index of the tab to activate.']` | `['index', 'number', 'Index of the tab to activate.']` | ['index', 'number', 'Index of the tab to activate.'] |
-| `['instant', 'boolean|nil', 'If true, switches without playing the fade-in animation.']` | `['instant', 'boolean|nil', 'If true, switches without playing the fade-in animation.']` | ['instant', 'boolean|nil', 'If true, switches without playing the fade-in animation.'] |
+| `index` | `number` | Index of the tab to activate. |
+| `instant` | `boolean|nil` | If true, switches without playing the fade-in animation. |
 
 ### `PMUI.Tabs:OnTabChange(callback)`
 
@@ -45,7 +48,7 @@ The callback receives the selected tab index and its tab data.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['callback', 'function|nil', 'Tab change callback.']` | `['callback', 'function|nil', 'Tab change callback.']` | ['callback', 'function|nil', 'Tab change callback.'] |
+| `callback` | `function|nil` | Tab change callback. |
 
 ### `PMUI.Tabs:SaveState(data)`
 
@@ -53,7 +56,7 @@ Saves the currently active tab index into the provided state table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'State table to populate.']` | `['data', 'table', 'State table to populate.']` | ['data', 'table', 'State table to populate.'] |
+| `data` | `table` | State table to populate. |
 
 ### `PMUI.Tabs:LoadState(data)`
 
@@ -62,5 +65,5 @@ Invalid or out-of-range indices are ignored.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'State table containing the saved active index.']` | `['data', 'table', 'State table containing the saved active index.']` | ['data', 'table', 'State table containing the saved active index.'] |
+| `data` | `table` | State table containing the saved active index. |
 

@@ -1,8 +1,11 @@
 # ProgressBar
+
 **Путь подключения:** `require "ProjectMotionUI/Components/ProgressBar"`
 
 ---
+
 ## Класс `PMUI.ProgressBar`
+
 *Наследуется от:* `PMUI.BaseElement`
 
 ## Методы и функции
@@ -14,8 +17,8 @@ Creates a progress bar with the specified value range.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['minVal', 'number|nil', 'Minimum progress value. Defaults to 0.']` | `['minVal', 'number|nil', 'Minimum progress value. Defaults to 0.']` | ['minVal', 'number|nil', 'Minimum progress value. Defaults to 0.'] |
-| `['maxVal', 'number|nil', 'Maximum progress value. Defaults to 100.']` | `['maxVal', 'number|nil', 'Maximum progress value. Defaults to 100.']` | ['maxVal', 'number|nil', 'Maximum progress value. Defaults to 100.'] |
+| `minVal` | `number|nil` | Minimum progress value. Defaults to 0. |
+| `maxVal` | `number|nil` | Maximum progress value. Defaults to 100. |
 
 ### `PMUI.ProgressBar:SetRange(minVal, maxVal)`
 
@@ -24,8 +27,8 @@ Sets the minimum and maximum values of the progress range.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['minVal', 'number', 'Minimum progress value.']` | `['minVal', 'number', 'Minimum progress value.']` | ['minVal', 'number', 'Minimum progress value.'] |
-| `['maxVal', 'number', 'Maximum progress value.']` | `['maxVal', 'number', 'Maximum progress value.']` | ['maxVal', 'number', 'Maximum progress value.'] |
+| `minVal` | `number` | Minimum progress value. |
+| `maxVal` | `number` | Maximum progress value. |
 
 ### `PMUI.ProgressBar:SetValue(val, instant)`
 
@@ -36,8 +39,8 @@ When instant is false, the displayed value is animated using QuadOut easing.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['val', 'number', 'Target progress value.']` | `['val', 'number', 'Target progress value.']` | ['val', 'number', 'Target progress value.'] |
-| `['instant', 'boolean|nil', 'If true, updates the displayed value immediately.']` | `['instant', 'boolean|nil', 'If true, updates the displayed value immediately.']` | ['instant', 'boolean|nil', 'If true, updates the displayed value immediately.'] |
+| `val` | `number` | Target progress value. |
+| `instant` | `boolean|nil` | If true, updates the displayed value immediately. |
 
 ### `PMUI.ProgressBar:SetFillColor(r, g, b, a)`
 
@@ -46,10 +49,10 @@ Sets the progress fill color.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['r', 'number', 'Red component (0.0-1.0).']` | `['r', 'number', 'Red component (0.0-1.0).']` | ['r', 'number', 'Red component (0.0-1.0).'] |
-| `['g', 'number', 'Green component (0.0-1.0).']` | `['g', 'number', 'Green component (0.0-1.0).']` | ['g', 'number', 'Green component (0.0-1.0).'] |
-| `['b', 'number', 'Blue component (0.0-1.0).']` | `['b', 'number', 'Blue component (0.0-1.0).']` | ['b', 'number', 'Blue component (0.0-1.0).'] |
-| `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | `['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.']` | ['a', 'number|nil', 'Alpha component (0.0-1.0), defaults to 1.0.'] |
+| `r` | `number` | Red component (0.0-1.0). |
+| `g` | `number` | Green component (0.0-1.0). |
+| `b` | `number` | Blue component (0.0-1.0). |
+| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
 
 ### `PMUI.ProgressBar:SetShowText(show, customText)`
 
@@ -59,8 +62,8 @@ An optional custom string can be used instead of the automatically calculated pe
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['show', 'boolean', 'Whether to display text.']` | `['show', 'boolean', 'Whether to display text.']` | ['show', 'boolean', 'Whether to display text.'] |
-| `['customText', 'string|nil', 'Custom text to display instead of the percentage.']` | `['customText', 'string|nil', 'Custom text to display instead of the percentage.']` | ['customText', 'string|nil', 'Custom text to display instead of the percentage.'] |
+| `show` | `boolean` | Whether to display text. |
+| `customText` | `string|nil` | Custom text to display instead of the percentage. |
 
 ### `PMUI.ProgressBar:prerender()`
 

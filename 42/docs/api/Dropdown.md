@@ -1,8 +1,11 @@
 # Dropdown
+
 **Require path:** `require "ProjectMotionUI/Components/Dropdown"`
 
 ---
+
 ## Class `PMUI.Dropdown`
+
 *Inherits from:* `PMUI.BaseElement`
 
 ## Methods & Functions
@@ -14,8 +17,8 @@ Creates a new dropdown element with the provided options and initial selection.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['options', 'table|nil', 'List of available dropdown options.']` | `['options', 'table|nil', 'List of available dropdown options.']` | ['options', 'table|nil', 'List of available dropdown options.'] |
-| `['defaultIndex', 'number|nil', 'Index of the initially selected option.']` | `['defaultIndex', 'number|nil', 'Index of the initially selected option.']` | ['defaultIndex', 'number|nil', 'Index of the initially selected option.'] |
+| `options` | `table|nil` | List of available dropdown options. |
+| `defaultIndex` | `number|nil` | Index of the initially selected option. |
 
 ### `PMUI.Dropdown:SetOptions(options, defaultIndex)`
 
@@ -24,8 +27,8 @@ Replaces the available options and resets the selected index.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['options', 'table|nil', 'List of options to display.']` | `['options', 'table|nil', 'List of options to display.']` | ['options', 'table|nil', 'List of options to display.'] |
-| `['defaultIndex', 'number|nil', 'Index of the option to select after updating the list.']` | `['defaultIndex', 'number|nil', 'Index of the option to select after updating the list.']` | ['defaultIndex', 'number|nil', 'Index of the option to select after updating the list.'] |
+| `options` | `table|nil` | List of options to display. |
+| `defaultIndex` | `number|nil` | Index of the option to select after updating the list. |
 
 ### `PMUI.Dropdown:GetSelected()`
 
@@ -41,7 +44,7 @@ The callback receives the selected value, its index, and the dropdown instance.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['callback', 'function|nil', 'Function invoked after an option is selected.']` | `['callback', 'function|nil', 'Function invoked after an option is selected.']` | ['callback', 'function|nil', 'Function invoked after an option is selected.'] |
+| `callback` | `function|nil` | Function invoked after an option is selected. |
 
 ### `PMUI.Dropdown:Toggle()`
 
@@ -58,8 +61,8 @@ Plays the corresponding UI sound and invokes the selection callback when applica
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.Dropdown:prerender()`
 
@@ -73,7 +76,7 @@ Saves the currently selected option index into the provided data table.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'Table used to store the dropdown state.']` | `['data', 'table', 'Table used to store the dropdown state.']` | ['data', 'table', 'Table used to store the dropdown state.'] |
+| `data` | `table` | Table used to store the dropdown state. |
 
 ### `PMUI.Dropdown:LoadState(data)`
 
@@ -82,5 +85,5 @@ Invokes the selection callback if the saved index matches an available option.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `['data', 'table', 'Table containing the previously saved dropdown state.']` | `['data', 'table', 'Table containing the previously saved dropdown state.']` | ['data', 'table', 'Table containing the previously saved dropdown state.'] |
+| `data` | `table` | Table containing the previously saved dropdown state. |
 

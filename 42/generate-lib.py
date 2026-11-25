@@ -20,7 +20,8 @@ def parse_lua_file(filepath: Path):
 
         if stripped.startswith("--"):
             clean_comment = stripped.lstrip("-").strip()
-            comment_buffer.append(clean_comment)
+            if clean_comment and not set(clean_comment).issubset({"=", "-"}):
+                comment_buffer.append(clean_comment)
             continue
 
         class_match = CLASS_PATTERN.match(stripped)
@@ -56,10 +57,11 @@ def format_doc_lines(doc_lines, labels):
     params = []
     for line in doc_lines:
         if line.startswith("@param"):
-            parts = line.replace("@param", "").strip().split(" ", 2)
-            p_name = parts if len(parts) > 0 else ""
-            p_type = parts if len(parts) > 1 else ""
-            p_desc = parts if len(parts) > 2 else ""
+            raw = line.replace("@param", "", 1).strip()
+            parts = raw.split(None, 2)
+            p_name = parts[0] if len(parts) > 0 else ""
+            p_type = parts[1].strip("()") if len(parts) > 1 else ""
+            p_desc = parts[2] if len(parts) > 2 else ""
             params.append(f"| `{p_name}` | `{p_type}` | {p_desc} |")
         else:
             desc.append(line)
@@ -89,11 +91,11 @@ def build_locale_docs(output_dir: Path, url_prefix: str, labels: dict):
         md_name = rel_path.with_suffix(".md").name
         out_file = output_dir / md_name
 
-        content = [f"# {lua_file.stem}\n"]
-        content.append(f"**{labels['req']}:** `require \"ProjectMotionUI/{rel_path.with_suffix('').as_posix()}\"`\n\n---\n")
+        content = [f"# {lua_file.stem}\n\n"]
+        content.append(f"**{labels['req']}:** `require \"ProjectMotionUI/{rel_path.with_suffix('').as_posix()}\"`\n\n---\n\n")
 
         for cls in classes:
-            content.append(f"## {labels['cls']} `{cls['name']}`\n")
+            content.append(f"## {labels['cls']} `{cls['name']}`\n\n")
             content.append(f"*{labels['inh']}:* `{cls['parent']}`\n\n")
             content.append(format_doc_lines(cls["docs"], labels))
 

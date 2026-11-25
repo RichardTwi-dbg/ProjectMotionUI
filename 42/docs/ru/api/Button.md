@@ -1,8 +1,11 @@
 # Button
+
 **Путь подключения:** `require "ProjectMotionUI/Components/Button"`
 
 ---
+
 ## Класс `PMUI.Button`
+
 *Наследуется от:* `PMUI.BaseElement`
 
 ## Методы и функции
@@ -14,7 +17,7 @@ Creates a new button element with default appearance and behavior.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['text', 'string|nil', 'Text displayed inside the button.']` | `['text', 'string|nil', 'Text displayed inside the button.']` | ['text', 'string|nil', 'Text displayed inside the button.'] |
+| `text` | `string|nil` | Text displayed inside the button. |
 
 ### `PMUI.Button:SetTextures(normalTex, hoverTex, pressedTex)`
 
@@ -24,9 +27,9 @@ Texture paths are automatically resolved through getTexture().
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['normalTex', 'string|Texture|nil', 'Texture displayed in the default state.']` | `['normalTex', 'string|Texture|nil', 'Texture displayed in the default state.']` | ['normalTex', 'string|Texture|nil', 'Texture displayed in the default state.'] |
-| `['hoverTex', 'string|Texture|nil', 'Texture displayed while the mouse is hovering.']` | `['hoverTex', 'string|Texture|nil', 'Texture displayed while the mouse is hovering.']` | ['hoverTex', 'string|Texture|nil', 'Texture displayed while the mouse is hovering.'] |
-| `['pressedTex', 'string|Texture|nil', 'Texture displayed while the button is pressed.']` | `['pressedTex', 'string|Texture|nil', 'Texture displayed while the button is pressed.']` | ['pressedTex', 'string|Texture|nil', 'Texture displayed while the button is pressed.'] |
+| `normalTex` | `string|Texture|nil` | Texture displayed in the default state. |
+| `hoverTex` | `string|Texture|nil` | Texture displayed while the mouse is hovering. |
+| `pressedTex` | `string|Texture|nil` | Texture displayed while the button is pressed. |
 
 ### `PMUI.Button:SetText(text)`
 
@@ -35,7 +38,7 @@ Sets the text displayed inside the button.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['text', 'string', 'Button label.']` | `['text', 'string', 'Button label.']` | ['text', 'string', 'Button label.'] |
+| `text` | `string` | Button label. |
 
 ### `PMUI.Button:SetFont(font)`
 
@@ -44,7 +47,7 @@ Sets the font used to render the button label.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['font', 'UIFont', 'Font assigned to the button.']` | `['font', 'UIFont', 'Font assigned to the button.']` | ['font', 'UIFont', 'Font assigned to the button.'] |
+| `font` | `UIFont` | Font assigned to the button. |
 
 ### `PMUI.Button:SetColors(normal, hover, pressed)`
 
@@ -54,9 +57,9 @@ Unspecified colors retain their current values.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['normal', 'table|nil', 'Color used in the default state.']` | `['normal', 'table|nil', 'Color used in the default state.']` | ['normal', 'table|nil', 'Color used in the default state.'] |
-| `['hover', 'table|nil', 'Color used while the mouse is hovering.']` | `['hover', 'table|nil', 'Color used while the mouse is hovering.']` | ['hover', 'table|nil', 'Color used while the mouse is hovering.'] |
-| `['pressed', 'table|nil', 'Color used while the button is pressed.']` | `['pressed', 'table|nil', 'Color used while the button is pressed.']` | ['pressed', 'table|nil', 'Color used while the button is pressed.'] |
+| `normal` | `table|nil` | Color used in the default state. |
+| `hover` | `table|nil` | Color used while the mouse is hovering. |
+| `pressed` | `table|nil` | Color used while the button is pressed. |
 
 ### `PMUI.Button:OnClick(callback)`
 
@@ -66,7 +69,7 @@ The button instance is passed as the callback argument.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['callback', 'function|nil', 'Function invoked after a successful click.']` | `['callback', 'function|nil', 'Function invoked after a successful click.']` | ['callback', 'function|nil', 'Function invoked after a successful click.'] |
+| `callback` | `function|nil` | Function invoked after a successful click. |
 
 ### `PMUI.Button:onMouseDown(x, y)`
 
@@ -75,8 +78,8 @@ Handles the initial mouse press and activates the pressed visual state.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.Button:onMouseUp(x, y)`
 
@@ -86,8 +89,8 @@ Plays the configured click sound before invoking the callback.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.Button:onMouseUpOutside(x, y)`
 
@@ -95,8 +98,8 @@ Resets the pressed state when the mouse button is released outside the element.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['x', 'number', 'Mouse X coordinate relative to the element.']` | `['x', 'number', 'Mouse X coordinate relative to the element.']` | ['x', 'number', 'Mouse X coordinate relative to the element.'] |
-| `['y', 'number', 'Mouse Y coordinate relative to the element.']` | `['y', 'number', 'Mouse Y coordinate relative to the element.']` | ['y', 'number', 'Mouse Y coordinate relative to the element.'] |
+| `x` | `number` | Mouse X coordinate relative to the element. |
+| `y` | `number` | Mouse Y coordinate relative to the element. |
 
 ### `PMUI.Button:prerender()`
 

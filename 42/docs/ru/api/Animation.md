@@ -1,7 +1,9 @@
 # Animation
+
 **Путь подключения:** `require "ProjectMotionUI/Core/Animation"`
 
 ---
+
 ## Методы и функции
 
 ### `PMUI.AnimationController:PlayEffect(name, duration, params, onComplete)`
@@ -10,10 +12,10 @@ Starts a registered custom effect on the controlled element.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['name', 'string', 'Registered effect identifier.']` | `['name', 'string', 'Registered effect identifier.']` | ['name', 'string', 'Registered effect identifier.'] |
-| `['duration', 'number|nil', 'Effect duration in seconds. Defaults to 0.5.']` | `['duration', 'number|nil', 'Effect duration in seconds. Defaults to 0.5.']` | ['duration', 'number|nil', 'Effect duration in seconds. Defaults to 0.5.'] |
-| `['params', 'table|nil', 'Parameters passed to the effect callbacks.']` | `['params', 'table|nil', 'Parameters passed to the effect callbacks.']` | ['params', 'table|nil', 'Parameters passed to the effect callbacks.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the effect finishes.']` | `['onComplete', 'function|nil', 'Callback invoked when the effect finishes.']` | ['onComplete', 'function|nil', 'Callback invoked when the effect finishes.'] |
+| `name` | `string` | Registered effect identifier. |
+| `duration` | `number|nil` | Effect duration in seconds. Defaults to 0.5. |
+| `params` | `table|nil` | Parameters passed to the effect callbacks. |
+| `onComplete` | `function|nil` | Callback invoked when the effect finishes. |
 
 ### `PMUI.AnimationController:new(element)`
 
@@ -22,7 +24,7 @@ Creates an animation controller for a UI element.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['element', 'PMUI.BaseElement', 'Element controlled by this animation controller.']` | `['element', 'PMUI.BaseElement', 'Element controlled by this animation controller.']` | ['element', 'PMUI.BaseElement', 'Element controlled by this animation controller.'] |
+| `element` | `PMUI.BaseElement` | Element controlled by this animation controller. |
 
 ### `PMUI.AnimationController:Tween(tag, props, duration, easing, onComplete)`
 
@@ -31,11 +33,11 @@ Starting a tween with an existing tag replaces the previous tween using that tag
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['tag', 'string|nil', 'Unique tween identifier. Defaults to "default_tween".']` | `['tag', 'string|nil', 'Unique tween identifier. Defaults to "default_tween".']` | ['tag', 'string|nil', 'Unique tween identifier. Defaults to "default_tween".'] |
-| `['props', 'table', 'Property names mapped to their target values.']` | `['props', 'table', 'Property names mapped to their target values.']` | ['props', 'table', 'Property names mapped to their target values.'] |
-| `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.25.']` | `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.25.']` | ['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.25.'] |
-| `['easing', 'function|nil', 'Easing function used to interpolate values.']` | `['easing', 'function|nil', 'Easing function used to interpolate values.']` | ['easing', 'function|nil', 'Easing function used to interpolate values.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the tween finishes.']` | `['onComplete', 'function|nil', 'Callback invoked when the tween finishes.']` | ['onComplete', 'function|nil', 'Callback invoked when the tween finishes.'] |
+| `tag` | `string|nil` | Unique tween identifier. Defaults to "default_tween". |
+| `props` | `table` | Property names mapped to their target values. |
+| `duration` | `number|nil` | Animation duration in seconds. Defaults to 0.25. |
+| `easing` | `function|nil` | Easing function used to interpolate values. |
+| `onComplete` | `function|nil` | Callback invoked when the tween finishes. |
 
 ### `PMUI.AnimationController:Spring(props, stiffness, damping)`
 
@@ -44,9 +46,9 @@ Existing spring velocity is preserved when a property already has an active spri
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['props', 'table', 'Property names mapped to their target values.']` | `['props', 'table', 'Property names mapped to their target values.']` | ['props', 'table', 'Property names mapped to their target values.'] |
-| `['stiffness', 'number|nil', 'Spring stiffness. Defaults to 180.']` | `['stiffness', 'number|nil', 'Spring stiffness. Defaults to 180.']` | ['stiffness', 'number|nil', 'Spring stiffness. Defaults to 180.'] |
-| `['damping', 'number|nil', 'Spring damping. Defaults to 12.']` | `['damping', 'number|nil', 'Spring damping. Defaults to 12.']` | ['damping', 'number|nil', 'Spring damping. Defaults to 12.'] |
+| `props` | `table` | Property names mapped to their target values. |
+| `stiffness` | `number|nil` | Spring stiffness. Defaults to 180. |
+| `damping` | `number|nil` | Spring damping. Defaults to 12. |
 
 ### `PMUI.AnimationController:Impulse(vx, vy, stiffness, damping)`
 
@@ -55,10 +57,10 @@ Both offsets are animated back to zero using spring physics.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['vx', 'number|nil', 'Initial horizontal velocity.']` | `['vx', 'number|nil', 'Initial horizontal velocity.']` | ['vx', 'number|nil', 'Initial horizontal velocity.'] |
-| `['vy', 'number|nil', 'Initial vertical velocity.']` | `['vy', 'number|nil', 'Initial vertical velocity.']` | ['vy', 'number|nil', 'Initial vertical velocity.'] |
-| `['stiffness', 'number|nil', 'Spring stiffness. Defaults to 220.']` | `['stiffness', 'number|nil', 'Spring stiffness. Defaults to 220.']` | ['stiffness', 'number|nil', 'Spring stiffness. Defaults to 220.'] |
-| `['damping', 'number|nil', 'Spring damping. Defaults to 10.']` | `['damping', 'number|nil', 'Spring damping. Defaults to 10.']` | ['damping', 'number|nil', 'Spring damping. Defaults to 10.'] |
+| `vx` | `number|nil` | Initial horizontal velocity. |
+| `vy` | `number|nil` | Initial vertical velocity. |
+| `stiffness` | `number|nil` | Spring stiffness. Defaults to 220. |
+| `damping` | `number|nil` | Spring damping. Defaults to 10. |
 
 ### `PMUI.AnimationController:FallDown(bounciness, gravity, onComplete, initVx, initVy)`
 
@@ -67,11 +69,11 @@ The element remains within its parent or screen boundaries.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['bounciness', 'number|nil', 'Bounce strength, clamped between 0.1 and 0.85. Defaults to 0.5.']` | `['bounciness', 'number|nil', 'Bounce strength, clamped between 0.1 and 0.85. Defaults to 0.5.']` | ['bounciness', 'number|nil', 'Bounce strength, clamped between 0.1 and 0.85. Defaults to 0.5.'] |
-| `['gravity', 'number|nil', 'Downward acceleration. Defaults to 2200.']` | `['gravity', 'number|nil', 'Downward acceleration. Defaults to 2200.']` | ['gravity', 'number|nil', 'Downward acceleration. Defaults to 2200.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the element settles.']` | `['onComplete', 'function|nil', 'Callback invoked when the element settles.']` | ['onComplete', 'function|nil', 'Callback invoked when the element settles.'] |
-| `['initVx', 'number|nil', 'Initial horizontal velocity.']` | `['initVx', 'number|nil', 'Initial horizontal velocity.']` | ['initVx', 'number|nil', 'Initial horizontal velocity.'] |
-| `['initVy', 'number|nil', 'Initial vertical velocity.']` | `['initVy', 'number|nil', 'Initial vertical velocity.']` | ['initVy', 'number|nil', 'Initial vertical velocity.'] |
+| `bounciness` | `number|nil` | Bounce strength, clamped between 0.1 and 0.85. Defaults to 0.5. |
+| `gravity` | `number|nil` | Downward acceleration. Defaults to 2200. |
+| `onComplete` | `function|nil` | Callback invoked when the element settles. |
+| `initVx` | `number|nil` | Initial horizontal velocity. |
+| `initVy` | `number|nil` | Initial vertical velocity. |
 
 ### `PMUI.AnimationController:RestoreFromFall(instant)`
 
@@ -79,7 +81,7 @@ Stops the falling effect and restores the element to its original position.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['instant', 'boolean|nil', 'If true, resets offsets immediately; otherwise uses spring animation.']` | `['instant', 'boolean|nil', 'If true, resets offsets immediately; otherwise uses spring animation.']` | ['instant', 'boolean|nil', 'If true, resets offsets immediately; otherwise uses spring animation.'] |
+| `instant` | `boolean|nil` | If true, resets offsets immediately; otherwise uses spring animation. |
 
 ### `PMUI.AnimationController:Shatter(cols, rows, force, onComplete)`
 
@@ -88,10 +90,10 @@ A temporary effect layer is created to render the fragments independently.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['cols', 'number|nil', 'Number of fragment columns. Defaults to 4.']` | `['cols', 'number|nil', 'Number of fragment columns. Defaults to 4.']` | ['cols', 'number|nil', 'Number of fragment columns. Defaults to 4.'] |
-| `['rows', 'number|nil', 'Number of fragment rows. Defaults to 3.']` | `['rows', 'number|nil', 'Number of fragment rows. Defaults to 3.']` | ['rows', 'number|nil', 'Number of fragment rows. Defaults to 3.'] |
-| `['force', 'number|nil', 'Fragment scattering force. Defaults to 450.']` | `['force', 'number|nil', 'Fragment scattering force. Defaults to 450.']` | ['force', 'number|nil', 'Fragment scattering force. Defaults to 450.'] |
-| `['onComplete', 'function|nil', 'Callback invoked after all fragments disappear.']` | `['onComplete', 'function|nil', 'Callback invoked after all fragments disappear.']` | ['onComplete', 'function|nil', 'Callback invoked after all fragments disappear.'] |
+| `cols` | `number|nil` | Number of fragment columns. Defaults to 4. |
+| `rows` | `number|nil` | Number of fragment rows. Defaults to 3. |
+| `force` | `number|nil` | Fragment scattering force. Defaults to 450. |
+| `onComplete` | `function|nil` | Callback invoked after all fragments disappear. |
 
 ### `PMUI.AnimationController:Shake(intensity, duration)`
 
@@ -99,8 +101,8 @@ Applies a horizontal shake animation that gradually decreases in intensity.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['intensity', 'number|nil', 'Maximum horizontal displacement. Defaults to 6.']` | `['intensity', 'number|nil', 'Maximum horizontal displacement. Defaults to 6.']` | ['intensity', 'number|nil', 'Maximum horizontal displacement. Defaults to 6.'] |
-| `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.35.']` | `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.35.']` | ['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.35.'] |
+| `intensity` | `number|nil` | Maximum horizontal displacement. Defaults to 6. |
+| `duration` | `number|nil` | Animation duration in seconds. Defaults to 0.35. |
 
 ### `PMUI.AnimationController:Bounce(height, duration)`
 
@@ -108,8 +110,8 @@ Moves the element vertically in a short bouncing motion.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['height', 'number|nil', 'Maximum vertical displacement. Defaults to 8.']` | `['height', 'number|nil', 'Maximum vertical displacement. Defaults to 8.']` | ['height', 'number|nil', 'Maximum vertical displacement. Defaults to 8.'] |
-| `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.']` | `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.']` | ['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.'] |
+| `height` | `number|nil` | Maximum vertical displacement. Defaults to 8. |
+| `duration` | `number|nil` | Animation duration in seconds. Defaults to 0.3. |
 
 ### `PMUI.AnimationController:FadeIn(duration, onComplete)`
 
@@ -117,8 +119,8 @@ Fades the element in by animating its alpha from zero to one.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.']` | `['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.']` | ['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the fade finishes.']` | `['onComplete', 'function|nil', 'Callback invoked when the fade finishes.']` | ['onComplete', 'function|nil', 'Callback invoked when the fade finishes.'] |
+| `duration` | `number|nil` | Fade duration in seconds. Defaults to 0.25. |
+| `onComplete` | `function|nil` | Callback invoked when the fade finishes. |
 
 ### `PMUI.AnimationController:FadeOut(duration, onComplete)`
 
@@ -126,8 +128,8 @@ Fades the element out by animating its alpha to zero.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.']` | `['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.']` | ['duration', 'number|nil', 'Fade duration in seconds. Defaults to 0.25.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the fade finishes.']` | `['onComplete', 'function|nil', 'Callback invoked when the fade finishes.']` | ['onComplete', 'function|nil', 'Callback invoked when the fade finishes.'] |
+| `duration` | `number|nil` | Fade duration in seconds. Defaults to 0.25. |
+| `onComplete` | `function|nil` | Callback invoked when the fade finishes. |
 
 ### `PMUI.AnimationController:SlideIn(direction, distance, duration, onComplete)`
 
@@ -135,10 +137,10 @@ Slides the element into its original position from the specified direction.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['direction', 'string', 'Entry direction: "left", "right", "top", or "bottom".']` | `['direction', 'string', 'Entry direction: "left", "right", "top", or "bottom".']` | ['direction', 'string', 'Entry direction: "left", "right", "top", or "bottom".'] |
-| `['distance', 'number|nil', 'Initial displacement in pixels. Defaults to 40.']` | `['distance', 'number|nil', 'Initial displacement in pixels. Defaults to 40.']` | ['distance', 'number|nil', 'Initial displacement in pixels. Defaults to 40.'] |
-| `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.']` | `['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.']` | ['duration', 'number|nil', 'Animation duration in seconds. Defaults to 0.3.'] |
-| `['onComplete', 'function|nil', 'Callback invoked when the animation finishes.']` | `['onComplete', 'function|nil', 'Callback invoked when the animation finishes.']` | ['onComplete', 'function|nil', 'Callback invoked when the animation finishes.'] |
+| `direction` | `string` | Entry direction: "left", "right", "top", or "bottom". |
+| `distance` | `number|nil` | Initial displacement in pixels. Defaults to 40. |
+| `duration` | `number|nil` | Animation duration in seconds. Defaults to 0.3. |
+| `onComplete` | `function|nil` | Callback invoked when the animation finishes. |
 
 ### `PMUI.AnimationController:Update(dt)`
 
@@ -147,5 +149,5 @@ Applies the resulting position changes after all animation calculations are comp
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `['dt', 'number', 'Time elapsed since the previous update, in seconds.']` | `['dt', 'number', 'Time elapsed since the previous update, in seconds.']` | ['dt', 'number', 'Time elapsed since the previous update, in seconds.'] |
+| `dt` | `number` | Time elapsed since the previous update, in seconds. |
 
