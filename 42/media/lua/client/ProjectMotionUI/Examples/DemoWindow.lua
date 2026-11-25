@@ -239,7 +239,7 @@ local function SpawnTargetWindow()
     targetWin.anim:SlideIn("right", 40, 0.3)
 end
 
-local function OpenPhysicsSandbox()
+function OpenPhysicsSandbox()
     if PMUI.GetInstance(CONTROL_ID) or PMUI.GetInstance(TARGET_ID) then
         PMUI.CloseInstance(CONTROL_ID)
         PMUI.CloseInstance(TARGET_ID)

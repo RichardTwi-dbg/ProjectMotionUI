@@ -1,4 +1,8 @@
 name=ProjectMotionUI Framework
 id=PMUIFramework
-description=Модульный UI-фреймворк с адаптивной версткой и плавными анимациями для Project Zomboid.
+author=RichardTwi
+description=Adaptive & Physics UI Framework for Project Zomboid
 poster=poster.png
+icon=icon.png
+modversion=1.2.7
+versionMin=42.0.0

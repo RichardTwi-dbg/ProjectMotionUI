@@ -204,12 +204,16 @@ local function InjectMainMenuButton()
     ms.pmuiLauncherBtn = btn
 end
 
-Events.OnMainMenuEnter.Add(InjectMainMenuButton)
+if IsDebugMode() then
+    Events.OnMainMenuEnter.Add(InjectMainMenuButton)
+end
 
 Events.OnKeyPressed.Add(function(key)
-    if key == Keyboard.KEY_F7 then
-        PMUI.OpenLauncher()
-    elseif key == Keyboard.KEY_F8 and IsDebugMode() then
-        PMUI.Debug.Toggle()
+    if IsDebugMode() then
+        if key == Keyboard.KEY_F7 then
+            PMUI.OpenLauncher()
+        elseif key == Keyboard.KEY_F8 then
+            PMUI.Debug.Toggle()
+        end
     end
 end)
