@@ -55,14 +55,19 @@ def parse_lua_file(filepath: Path):
 def format_doc_lines(doc_lines, labels):
     desc = []
     params = []
+    returns = []
+
     for line in doc_lines:
         if line.startswith("@param"):
             raw = line.replace("@param", "", 1).strip()
             parts = raw.split(None, 2)
             p_name = parts[0] if len(parts) > 0 else ""
-            p_type = parts[1].strip("()") if len(parts) > 1 else ""
-            p_desc = parts[2] if len(parts) > 2 else ""
+            p_type = parts[1].strip("()").replace("|", "\\|") if len(parts) > 1 else ""
+            p_desc = parts[2].replace("|", "\\|") if len(parts) > 2 else ""
             params.append(f"| `{p_name}` | `{p_type}` | {p_desc} |")
+        elif line.startswith("@return"):
+            raw = line.replace("@return", "", 1).strip()
+            returns.append(raw.replace("|", "\\|"))
         else:
             desc.append(line)
 
@@ -72,6 +77,8 @@ def format_doc_lines(doc_lines, labels):
     if params:
         md += f"| {labels['param']} | {labels['type']} | {labels['desc']} |\n| :--- | :--- | :--- |\n"
         md += "\n".join(params) + "\n\n"
+    if returns:
+        md += f"**Returns:** `{'`, `'.join(returns)}`\n\n"
     return md
 
 

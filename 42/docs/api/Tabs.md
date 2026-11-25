@@ -13,17 +13,19 @@
 ### `PMUI.Tabs:new()`
 
 Creates a tab container with a tab bar and a content area.
-@return PMUI.Tabs
+
+**Returns:** `PMUI.Tabs`
 
 ### `PMUI.Tabs:AddTab(title)`
 
 Adds a new tab and returns its content container.
 The first tab added is automatically selected.
-@return PMUI.Frame Content container associated with the new tab.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `title` | `string` | Text displayed on the tab button. |
+
+**Returns:** `PMUI.Frame Content container associated with the new tab.`
 
 ### `PMUI.Tabs:UpdateTabButtonsLayout()`
 
@@ -38,17 +40,18 @@ The selected tab can optionally skip its fade-in animation.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `index` | `number` | Index of the tab to activate. |
-| `instant` | `boolean|nil` | If true, switches without playing the fade-in animation. |
+| `instant` | `boolean\|nil` | If true, switches without playing the fade-in animation. |
 
 ### `PMUI.Tabs:OnTabChange(callback)`
 
 Registers a callback invoked whenever the active tab changes.
 The callback receives the selected tab index and its tab data.
-@return PMUI.Tabs
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Tab change callback. |
+| `callback` | `function\|nil` | Tab change callback. |
+
+**Returns:** `PMUI.Tabs`
 
 ### `PMUI.Tabs:SaveState(data)`
 

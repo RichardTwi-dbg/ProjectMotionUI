@@ -14,46 +14,50 @@
 
 Creates a stack layout container.
 Children are arranged sequentially along the specified direction.
-@return PMUI_StackLayout o The created layout container.
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `direction` | `string|nil` | Layout direction: "vertical" or "horizontal". Defaults to "vertical". |
+| `direction` | `string\|nil` | Layout direction: "vertical" or "horizontal". Defaults to "vertical". |
+
+**Returns:** `PMUI_StackLayout o The created layout container.`
 
 ### `PMUI.StackLayout:SetGap(gap)`
 
 Sets the spacing between child elements.
 Triggers an immediate layout recalculation.
-@return PMUI_StackLayout self
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `gap` | `number` | Spacing between adjacent children in pixels. |
+
+**Returns:** `PMUI_StackLayout self`
 
 ### `PMUI.StackLayout:SetPadding(top, right, bottom, left)`
 
 Sets the inner padding of the layout container.
 Can accept either a single value for all sides or individual values.
 Triggers an immediate layout recalculation.
-@return PMUI_StackLayout self
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `top` | `number` | Top padding, or uniform padding when used alone. |
-| `right` | `number|nil` | Right padding. If omitted, the top value is used for all sides. |
-| `bottom` | `number|nil` | Bottom padding. |
-| `left` | `number|nil` | Left padding. |
+| `right` | `number\|nil` | Right padding. If omitted, the top value is used for all sides. |
+| `bottom` | `number\|nil` | Bottom padding. |
+| `left` | `number\|nil` | Left padding. |
+
+**Returns:** `PMUI_StackLayout self`
 
 ### `PMUI.StackLayout:SetAutoSize(enabled)`
 
 Enables or disables automatic container sizing.
 When enabled, the container adjusts its dimensions to fit its children and padding.
 Triggers an immediate layout recalculation.
-@return PMUI_StackLayout self
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `enabled` | `boolean` | Whether automatic sizing should be enabled. |
+
+**Returns:** `PMUI_StackLayout self`
 
 ### `PMUI.StackLayout:RecalculateLayout()`
 

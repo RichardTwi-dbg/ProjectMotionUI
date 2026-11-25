@@ -13,53 +13,58 @@
 ### `PMUI.Label:new(text, font)`
 
 Creates a new text label with the specified content and font.
-@return PMUI.Label
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `text` | `string|nil` | Initial text content. |
-| `font` | `UIFont|nil` | Font used to render the text. Defaults to UIFont.Small. |
+| `text` | `string\|nil` | Initial text content. |
+| `font` | `UIFont\|nil` | Font used to render the text. Defaults to UIFont.Small. |
+
+**Returns:** `PMUI.Label`
 
 ### `PMUI.Label:SetText(text)`
 
 Updates the label text and recalculates its dimensions when auto sizing is enabled.
-@return PMUI.Label
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `text` | `string|nil` | New text content. |
+| `text` | `string\|nil` | New text content. |
+
+**Returns:** `PMUI.Label`
 
 ### `PMUI.Label:SetFont(font)`
 
 Sets the font used to render the label.
 Recalculates the element dimensions when auto sizing is enabled.
-@return PMUI.Label
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `font` | `UIFont` | Font assigned to the label. |
 
+**Returns:** `PMUI.Label`
+
 ### `PMUI.Label:SetColor(r, g, b, a)`
 
 Sets the label text color.
-@return PMUI.Label
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `r` | `number` | Red component (0.0-1.0). |
 | `g` | `number` | Green component (0.0-1.0). |
 | `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+| `a` | `number\|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+
+**Returns:** `PMUI.Label`
 
 ### `PMUI.Label:SetAlign(align)`
 
 Sets the horizontal text alignment.
 Disables automatic sizing to preserve the manually assigned element dimensions.
-@return PMUI.Label
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `align` | `string` | Alignment mode: "left", "center", or "right". |
+
+**Returns:** `PMUI.Label`
 
 ### `PMUI.Label:UpdateSizeFromText()`
 

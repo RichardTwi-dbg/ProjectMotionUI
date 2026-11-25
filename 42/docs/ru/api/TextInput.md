@@ -13,11 +13,12 @@
 ### `PMUI.TextInput:new(placeholder)`
 
 Creates a text input field with an optional placeholder.
-@return PMUI.TextInput
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `placeholder` | `string|nil` | Text displayed when the input is empty and unfocused. |
+| `placeholder` | `string\|nil` | Text displayed when the input is empty and unfocused. |
+
+**Returns:** `PMUI.TextInput`
 
 ### `PMUI.TextInput:instantiate()`
 
@@ -36,26 +37,29 @@ Recalculates the element layout and updates the native input dimensions.
 ### `PMUI.TextInput:GetText()`
 
 Returns the current text entered by the user.
-@return string
+
+**Returns:** `string`
 
 ### `PMUI.TextInput:SetText(text)`
 
 Sets the text displayed in the input field.
-@return PMUI.TextInput
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `text` | `string|nil` | Text to assign. Nil is treated as an empty string. |
+| `text` | `string\|nil` | Text to assign. Nil is treated as an empty string. |
+
+**Returns:** `PMUI.TextInput`
 
 ### `PMUI.TextInput:OnChange(callback)`
 
 Registers a callback invoked whenever the input text changes.
 The callback receives the current text and the TextInput instance.
-@return PMUI.TextInput
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Text change callback. |
+| `callback` | `function\|nil` | Text change callback. |
+
+**Returns:** `PMUI.TextInput`
 
 ### `PMUI.TextInput:render()`
 

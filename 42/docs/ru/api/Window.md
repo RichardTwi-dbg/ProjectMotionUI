@@ -13,73 +13,80 @@
 ### `PMUI.Window:new(title, width, height)`
 
 Creates a window with a draggable header, title, close button, and content area.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `title` | `string|nil` | Window title. Defaults to "Window". |
-| `width` | `number|nil` | Initial window width. Defaults to 360. |
-| `height` | `number|nil` | Initial window height. Defaults to 280. |
+| `title` | `string\|nil` | Window title. Defaults to "Window". |
+| `width` | `number\|nil` | Initial window width. Defaults to 360. |
+| `height` | `number\|nil` | Initial window height. Defaults to 280. |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:SetTexture(textureOrPath)`
 
 Sets the window background texture.
 When a texture is assigned, the header background and border are made transparent.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
+| `textureOrPath` | `string\|Texture\|nil` | Texture object or path to a texture. |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:SetOpenSound(soundName)`
 
 Sets the sound played when the window is opened.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `soundName` | `string|nil` | UI sound name. |
+| `soundName` | `string\|nil` | UI sound name. |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:SetCloseSound(soundName)`
 
 Sets the sound played when the window is closed.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `soundName` | `string|nil` | UI sound name. |
+| `soundName` | `string\|nil` | UI sound name. |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:SetCornerRadius(radius)`
 
 Sets the corner radius of the window and its header.
 The header uses the top-corners-only mode to preserve the window shape.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `radius` | `number` | Corner radius in pixels. |
 
+**Returns:** `PMUI.Window`
+
 ### `PMUI.Window:SetHeaderColor(r, g, b, a)`
 
 Sets the background color of the window header.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `r` | `number` | Red component (0.0-1.0). |
 | `g` | `number` | Green component (0.0-1.0). |
 | `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0). |
+| `a` | `number\|nil` | Alpha component (0.0-1.0). |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:OnClose(callback)`
 
 Registers a callback invoked when the window is closed.
 The callback receives the window instance.
-@return PMUI.Window
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| `callback` | `function|nil` | Close callback. |
+| `callback` | `function\|nil` | Close callback. |
+
+**Returns:** `PMUI.Window`
 
 ### `PMUI.Window:Close()`
 

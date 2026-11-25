@@ -13,16 +13,18 @@
 ### `PMUI.ScrollFrame:new()`
 
 Creates a scrollable frame that clips its children to the visible area.
-@return PMUI.ScrollFrame
+
+**Returns:** `PMUI.ScrollFrame`
 
 ### `PMUI.ScrollFrame:onMouseWheel(del)`
 
 Handles mouse wheel input and updates the vertical scroll position.
-@return boolean Always returns true to indicate that the input was handled.
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
 | `del` | `number` | Mouse wheel delta. |
+
+**Returns:** `boolean Always returns true to indicate that the input was handled.`
 
 ### `PMUI.ScrollFrame:ClampScroll()`
 

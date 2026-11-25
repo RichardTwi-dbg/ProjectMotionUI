@@ -9,7 +9,8 @@
 ### `PMUI.Debug.Toggle()`
 
 Toggles the debug overlay state.
-@return boolean enabled The updated debug state.
+
+**Returns:** `boolean enabled The updated debug state.`
 
 ### `PMUI.Debug.SetEnabled(state)`
 

@@ -13,52 +13,57 @@
 ### `PMUI.Frame:new()`
 
 Creates a new frame element with default background and border settings.
-@return PMUI.Frame
+
+**Returns:** `PMUI.Frame`
 
 ### `PMUI.Frame:SetTexture(textureOrPath)`
 
 Sets the frame background texture.
 String values are resolved through getTexture(), while texture objects are assigned directly.
-@return PMUI.Frame
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `textureOrPath` | `string|Texture|nil` | Texture object or path to a texture. |
+| `textureOrPath` | `string\|Texture\|nil` | Texture object or path to a texture. |
+
+**Returns:** `PMUI.Frame`
 
 ### `PMUI.Frame:SetBackgroundColor(r, g, b, a)`
 
 Sets the frame background color and controls background visibility.
-@return PMUI.Frame
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `r` | `number` | Red component (0.0-1.0). |
 | `g` | `number` | Green component (0.0-1.0). |
 | `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+| `a` | `number\|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+
+**Returns:** `PMUI.Frame`
 
 ### `PMUI.Frame:SetBorderColor(r, g, b, a)`
 
 Sets the frame border color and controls border visibility.
-@return PMUI.Frame
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `r` | `number` | Red component (0.0-1.0). |
 | `g` | `number` | Green component (0.0-1.0). |
 | `b` | `number` | Blue component (0.0-1.0). |
-| `a` | `number|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+| `a` | `number\|nil` | Alpha component (0.0-1.0), defaults to 1.0. |
+
+**Returns:** `PMUI.Frame`
 
 ### `PMUI.Frame:SetCornerRadius(radius, topOnly)`
 
 Sets the corner radius used when rendering the frame.
 Optionally limits rounded corners to the top edge.
-@return PMUI.Frame
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `radius` | `number` | Corner radius in pixels. |
-| `topOnly` | `boolean|nil` | Whether only the top corners should be rounded. |
+| `topOnly` | `boolean\|nil` | Whether only the top corners should be rounded. |
+
+**Returns:** `PMUI.Frame`
 
 ### `PMUI.Frame:DrawRoundedBox(w, h, r, bgCol, borderCol, alphaMult)`
 
